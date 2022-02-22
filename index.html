@@ -20,6 +20,36 @@
             </td>
         </tr>
         <tr>
+            <td align="right">Company name : </td>
+            <td>
+                <input id="company-name" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">About : </td>
+            <td>
+                <input id="about" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Type : </td>
+            <td>
+                <input id="type" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">CTC : </td>
+            <td>
+                <input id="ctc" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Location : </td>
+            <td>
+                <input id="location" type="text">
+            </td>
+        </tr>
+        <tr>
             <td align="right">Stipend : </td>
             <td>
                 <input id="stipend" type="text">
@@ -28,7 +58,18 @@
         <tr>
             <td align="right">Time : </td>
             <td>
-                <input id="time" type="text">
+                <select id="time">
+                    <option value="Not selected">Not selected</option>
+                    <option value="Full Time">Full Time</option>
+                    <option value="Part Time">Part Time</option>
+                </select>
+                <!-- <input id="time" type="text"> -->
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Duration : </td>
+            <td>
+                <input id="duration" type="text">
             </td>
         </tr>
         <tr>
@@ -52,7 +93,7 @@
         <tr>
             <td align="right">Deadline : </td>
             <td>
-                <input id="deadline" type="text">
+                <input id="deadline" type="datetime-local">
             </td>
         </tr>
         <tr>
@@ -61,6 +102,17 @@
                 <button onclick="gen()">GEN</button>
             </td>
         </tr>
+
+        <table>
+            <tr>
+                <button id="copy" onclick="copy()" hidden>COPY</button>
+            </tr>
+            <tr>
+                <pre id="outputbox"></pre>
+            </tr>
+        </table>
+
+
 
 
     </table>
